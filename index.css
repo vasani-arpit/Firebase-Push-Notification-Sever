@@ -1,0 +1,12 @@
+.navbar {
+    justify-content: center;
+}
+
+.center {
+    float: none;
+    margin: 1rem auto;
+}
+
+.bg-light{
+    height: 100%;
+}
