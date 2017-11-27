@@ -1,12 +1,13 @@
 $(function () {
     $("#sendNotification").on("click", function () {
-        var data = {
-            "notification": {
+        var data = {            
+            "to": $("#exampleDevice").val(),
+            "data":{
                 "title": $("#exampleTitle").val(),
-                "body": $("#exampleBody").val()
-            },
-            "content_available": true,
-            "to": $("#exampleDevice").val()
+                "message":$("#exampleBody").val(),
+                "sound": "default",
+                "badge": 1
+            }
         }
         var settings = {
             url: "https://fcm.googleapis.com/fcm/send",
